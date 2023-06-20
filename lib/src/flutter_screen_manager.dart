@@ -3,6 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screen_manager/flutter_screen_manager.dart';
 
 const kScreenEventDisplayAdded = 'display-added';
@@ -51,9 +52,10 @@ class ScreenRetriever {
     _listeners.remove(listener);
   }
 
-  Future<Offset> getCursorScreenPoint() async {
+  Future<Offset> getCursorScreenPoint(BuildContext context) async {
+    final FlutterView view = View.of(context);
     final Map<String, dynamic> arguments = {
-      'devicePixelRatio': window.devicePixelRatio,
+      'devicePixelRatio': view.devicePixelRatio,
     };
     final Map<dynamic, dynamic> resultData =
         await _channel.invokeMethod('getCursorScreenPoint', arguments);
@@ -63,18 +65,20 @@ class ScreenRetriever {
     );
   }
 
-  Future<Display> getPrimaryDisplay() async {
+  Future<Display> getPrimaryDisplay(BuildContext context) async {
+    final FlutterView view = View.of(context);
     final Map<String, dynamic> arguments = {
-      'devicePixelRatio': window.devicePixelRatio,
+      'devicePixelRatio': view.devicePixelRatio,
     };
     final Map<dynamic, dynamic> resultData =
         await _channel.invokeMethod('getPrimaryDisplay', arguments);
     return Display.fromJson(Map<String, dynamic>.from(resultData));
   }
 
-  Future<List<Display>> getAllDisplays() async {
+  Future<List<Display>> getAllDisplays(BuildContext context) async {
+    final FlutterView view = View.of(context);
     final Map<String, dynamic> arguments = {
-      'devicePixelRatio': window.devicePixelRatio,
+      'devicePixelRatio': view.devicePixelRatio,
     };
     final Map<dynamic, dynamic> resultData =
         await _channel.invokeMethod('getAllDisplays', arguments);

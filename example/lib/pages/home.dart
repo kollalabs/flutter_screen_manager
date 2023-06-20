@@ -42,13 +42,15 @@ class _HomePageState extends State<HomePage> with ScreenListener {
         _handleGetCursorScreenPoint();
       },
     );
-    _primaryDisplay = await screenRetriever.getPrimaryDisplay();
-    _displayList = await screenRetriever.getAllDisplays();
+    _primaryDisplay = await screenRetriever.getPrimaryDisplay(context);
+    if (context.mounted) {
+      _displayList = await screenRetriever.getAllDisplays(context);
+    }
     setState(() {});
   }
 
   _handleGetCursorScreenPoint() async {
-    Offset point = await screenRetriever.getCursorScreenPoint();
+    Offset point = await screenRetriever.getCursorScreenPoint(context);
     BotToast.showText(
       text: 'cursorScreenPoint: $point',
     );
@@ -91,7 +93,8 @@ class _HomePageState extends State<HomePage> with ScreenListener {
             PreferenceListItem(
               title: const Text('getPrimaryDisplay'),
               onTap: () async {
-                _primaryDisplay = await screenRetriever.getPrimaryDisplay();
+                _primaryDisplay =
+                    await screenRetriever.getPrimaryDisplay(context);
                 setState(() {});
                 BotToast.showText(
                   text: 'primaryDisplay: ${_primaryDisplay!.toJson()}',
@@ -101,7 +104,7 @@ class _HomePageState extends State<HomePage> with ScreenListener {
             PreferenceListItem(
               title: const Text('getAllDisplays'),
               onTap: () async {
-                _displayList = await screenRetriever.getAllDisplays();
+                _displayList = await screenRetriever.getAllDisplays(context);
                 setState(() {});
                 BotToast.showText(
                   text:
