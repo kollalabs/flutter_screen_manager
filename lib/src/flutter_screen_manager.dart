@@ -3,9 +3,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:kolla_screen_retriever/kolla_screen_retriever.dart';
-
-// import 'screen_listener.dart';
+import 'package:flutter_screen_manager/flutter_screen_manager.dart';
 
 const kScreenEventDisplayAdded = 'display-added';
 const kScreenEventDisplayRemoved = 'display-removed';
@@ -18,7 +16,7 @@ class ScreenRetriever {
   /// The shared instance of [ScreenRetriever].
   static final ScreenRetriever instance = ScreenRetriever._();
 
-  final MethodChannel _channel = const MethodChannel('kolla_screen_retriever');
+  final MethodChannel _channel = const MethodChannel('flutter_screen_manager');
 
   final ObserverList<ScreenListener> _listeners =
       ObserverList<ScreenListener>();

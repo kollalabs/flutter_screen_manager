@@ -4,13 +4,13 @@ PODS:
   - hotkey_manager (0.0.1):
     - FlutterMacOS
     - HotKey
-  - kolla_screen_retriever (0.0.1):
+  - flutter_screen_manager (0.0.1):
     - FlutterMacOS
 
 DEPENDENCIES:
   - FlutterMacOS (from `Flutter/ephemeral`)
   - hotkey_manager (from `Flutter/ephemeral/.symlinks/plugins/hotkey_manager/macos`)
-  - kolla_screen_retriever (from `Flutter/ephemeral/.symlinks/plugins/kolla_screen_retriever/macos`)
+  - flutter_screen_manager (from `Flutter/ephemeral/.symlinks/plugins/flutter_screen_manager/macos`)
 
 SPEC REPOS:
   trunk:
@@ -21,14 +21,14 @@ EXTERNAL SOURCES:
     :path: Flutter/ephemeral
   hotkey_manager:
     :path: Flutter/ephemeral/.symlinks/plugins/hotkey_manager/macos
-  kolla_screen_retriever:
-    :path: Flutter/ephemeral/.symlinks/plugins/kolla_screen_retriever/macos
+  flutter_screen_manager:
+    :path: Flutter/ephemeral/.symlinks/plugins/flutter_screen_manager/macos
 
 SPEC CHECKSUMS:
   FlutterMacOS: 8f6f14fa908a6fb3fba0cd85dbd81ec4b251fb24
   HotKey: ad59450195936c10992438c4210f673de5aee43e
   hotkey_manager: ad673457691f4d39e481be04a61da2ae07d81c62
-  kolla_screen_retriever: 59634572a57080243dd1bf715e55b6c54f241a38
+  flutter_screen_manager: 59634572a57080243dd1bf715e55b6c54f241a38
 
 PODFILE CHECKSUM: 353c8bcc5d5b0994e508d035b5431cfe18c1dea7
 

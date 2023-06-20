@@ -1,6 +1,6 @@
 # screen_retriever_example
 
-Demonstrates how to use the kolla_screen_retriever plugin.
+Demonstrates how to use the flutter_screen_manager plugin.
 
 ## Getting Started
 

@@ -1,4 +1,4 @@
-#include "include/kolla_screen_retriever/kolla_screen_retriever_plugin.h"
+#include "include/flutter_screen_manager/kolla_screen_retriever_plugin.h"
 
 // This must be included before many other Windows headers.
 #include <windows.h>
@@ -53,7 +53,7 @@ class ScreenRetrieverPlugin : public flutter::Plugin {
 void ScreenRetrieverPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows* registrar) {
   channel = std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-      registrar->messenger(), "kolla_screen_retriever",
+      registrar->messenger(), "flutter_screen_manager",
       &flutter::StandardMethodCodec::GetInstance());
 
   auto plugin = std::make_unique<ScreenRetrieverPlugin>();

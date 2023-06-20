@@ -4,7 +4,7 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:hotkey_manager/hotkey_manager.dart';
 import 'package:preference_list/preference_list.dart';
-import 'package:kolla_screen_retriever/kolla_screen_retriever.dart';
+import 'package:flutter_screen_manager/flutter_screen_manager.dart';
 
 final hotKeyManager = HotKeyManager.instance;
 final screenRetriever = ScreenRetriever.instance;

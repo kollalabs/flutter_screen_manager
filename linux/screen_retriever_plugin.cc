@@ -1,4 +1,4 @@
-#include "include/kolla_screen_retriever/kolla_screen_retriever_plugin.h"
+#include "include/flutter_screen_manager/kolla_screen_retriever_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
@@ -184,7 +184,7 @@ void screen_retriever_plugin_register_with_registrar(
   g_autoptr(FlStandardMethodCodec) codec = fl_standard_method_codec_new();
   g_autoptr(FlMethodChannel) channel =
       fl_method_channel_new(fl_plugin_registrar_get_messenger(registrar),
-                            "kolla_screen_retriever", FL_METHOD_CODEC(codec));
+                            "flutter_screen_manager", FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(
       channel, method_call_cb, g_object_ref(plugin), g_object_unref);
 

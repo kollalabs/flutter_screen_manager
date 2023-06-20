@@ -5,10 +5,10 @@
 import FlutterMacOS
 import Foundation
 
+import flutter_screen_manager
 import hotkey_manager
-import kolla_screen_retriever
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  HotkeyManagerPlugin.register(with: registry.registrar(forPlugin: "HotkeyManagerPlugin"))
   KollaScreenRetrieverPlugin.register(with: registry.registrar(forPlugin: "KollaScreenRetrieverPlugin"))
+  HotkeyManagerPlugin.register(with: registry.registrar(forPlugin: "HotkeyManagerPlugin"))
 }

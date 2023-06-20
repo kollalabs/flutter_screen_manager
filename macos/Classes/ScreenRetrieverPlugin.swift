@@ -26,7 +26,7 @@ public class ScreenRetrieverPlugin: NSObject, FlutterPlugin {
     var channel: FlutterMethodChannel!
     
     public static func register(with registrar: FlutterPluginRegistrar) {
-        let channel = FlutterMethodChannel(name: "kolla_screen_retriever", binaryMessenger: registrar.messenger)
+        let channel = FlutterMethodChannel(name: "flutter_screen_manager", binaryMessenger: registrar.messenger)
         let instance = ScreenRetrieverPlugin()
         instance.registrar = registrar
         instance.channel = channel

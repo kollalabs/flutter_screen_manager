@@ -1,4 +1,4 @@
-name: kolla_screen_retriever
+name: flutter_screen_manager
 description: This plugin allows Flutter desktop apps to Retrieve information about screen size, displays, cursor position, etc.
 version: 0.1.9
 

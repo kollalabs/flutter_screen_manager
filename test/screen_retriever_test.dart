@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:kolla_screen_retriever/kolla_screen_retriever.dart';
+import 'package:flutter_screen_manager/flutter_screen_manager.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

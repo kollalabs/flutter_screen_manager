@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
 set(BINARY_NAME "screen_retriever_example")
-set(APPLICATION_ID "com.example.kolla_screen_retriever")
+set(APPLICATION_ID "com.example.flutter_screen_manager")
 
 cmake_policy(SET CMP0063 NEW)
 

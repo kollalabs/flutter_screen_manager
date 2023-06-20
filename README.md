@@ -1,14 +1,14 @@
-# kolla_screen_retriever
+# flutter_screen_manager
 
 [![pub version][pub-image]][pub-url] [![][codecov-image]][codecov-url] [![][discord-image]][discord-url] ![][visits-count-image]
 
-[pub-image]: https://img.shields.io/pub/v/kolla_screen_retriever.svg
-[pub-url]: https://pub.dev/packages/kolla_screen_retriever
-[codecov-image]: https://codecov.io/gh/leanflutter/kolla_screen_retriever/branch/main/graph/badge.svg?token=9UET13JP0B
-[codecov-url]: https://codecov.io/gh/leanflutter/kolla_screen_retriever
+[pub-image]: https://img.shields.io/pub/v/flutter_screen_manager.svg
+[pub-url]: https://pub.dev/packages/flutter_screen_manager
+[codecov-image]: https://codecov.io/gh/leanflutter/flutter_screen_manager/branch/main/graph/badge.svg?token=9UET13JP0B
+[codecov-url]: https://codecov.io/gh/leanflutter/flutter_screen_manager
 [discord-image]: https://img.shields.io/discord/884679008049037342.svg
 [discord-url]: https://discord.gg/zPa6EZ2jqb
-[visits-count-image]: https://img.shields.io/badge/dynamic/json?label=Visits%20Count&query=value&url=https://api.countapi.xyz/hit/leanflutter.kolla_screen_retriever/visits
+[visits-count-image]: https://img.shields.io/badge/dynamic/json?label=Visits%20Count&query=value&url=https://api.countapi.xyz/hit/leanflutter.flutter_screen_manager/visits
 
 This plugin allows Flutter desktop apps to Retrieve information about screen size, displays, cursor position, etc.
 
@@ -21,7 +21,7 @@ English | [简体中文](./README-ZH.md)
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-- [kolla_screen_retriever](#kolla_screen_retriever)
+- [flutter_screen_manager](#flutter_screen_manager)
   - [Platform Support](#platform-support)
   - [Quick Start](#quick-start)
     - [Installation](#installation)
@@ -47,16 +47,16 @@ Add this to your package's pubspec.yaml file:
 
 ```yaml
 dependencies:
-  kolla_screen_retriever: ^0.1.6
+  flutter_screen_manager: ^0.1.6
 ```
 
 Or
 
 ```yaml
 dependencies:
-  kolla_screen_retriever:
+  flutter_screen_manager:
     git:
-      url: https://github.com/leanflutter/kolla_screen_retriever.git
+      url: https://github.com/leanflutter/flutter_screen_manager.git
       ref: main
 ```
 

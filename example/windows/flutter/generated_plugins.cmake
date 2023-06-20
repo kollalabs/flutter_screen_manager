@@ -4,7 +4,7 @@
 
 list(APPEND FLUTTER_PLUGIN_LIST
   hotkey_manager
-  kolla_screen_retriever
+  flutter_screen_manager
 )
 
 list(APPEND FLUTTER_FFI_PLUGIN_LIST
