@@ -1,4 +1,4 @@
-#include "include/flutter_screen_manager/kolla_screen_retriever_plugin.h"
+#include "include/flutter_screen_manager/flutter_screen_manager_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
@@ -16,7 +16,7 @@ struct _ScreenRetrieverPlugin {
 };
 
 G_DEFINE_TYPE(ScreenRetrieverPlugin,
-              kolla_screen_retriever_plugin,
+              flutter_screen_manager_plugin,
               g_object_get_type())
 
 // Gets the window being controlled.

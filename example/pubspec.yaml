@@ -1,4 +1,4 @@
-name: kolla_screen_retriever_example
+name: flutter_screen_manager_example
 description: Demonstrates how to use the flutter_screen_manager plugin.
 
 # The following line prevents the package from being accidentally published to
