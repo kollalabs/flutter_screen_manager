@@ -26,8 +26,8 @@ flutter:
   plugin:
     platforms:
       linux:
-        pluginClass: KollaScreenRetrieverPlugin
+        pluginClass: FlutterScreenManagerPlugin
       macos:
-        pluginClass: KollaScreenRetrieverPlugin
+        pluginClass: FlutterScreenManagerPlugin
       windows:
-        pluginClass: KollaScreenRetrieverPlugin
+        pluginClass: FlutterScreenManagerPlugin

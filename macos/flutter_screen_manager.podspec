@@ -4,14 +4,14 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'flutter_screen_manager'
-  s.version          = '0.0.1'
+  s.version          = '0.2.0'
   s.summary          = 'A new flutter plugin project.'
   s.description      = <<-DESC
 A new flutter plugin project.
                        DESC
-  s.homepage         = 'https://leanflutter.org'
+  s.homepage         = ''
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'LiJianying' => 'lijy91@foxmail.com' }
+  s.author           = { 'None' => 'info@getkolla.com' }
   s.source           = { :path => '.' }
   s.source_files     = 'Classes/**/*'
   s.dependency 'FlutterMacOS'

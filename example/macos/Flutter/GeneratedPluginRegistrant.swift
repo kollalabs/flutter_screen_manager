@@ -9,6 +9,6 @@ import flutter_screen_manager
 import hotkey_manager
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  KollaScreenRetrieverPlugin.register(with: registry.registrar(forPlugin: "KollaScreenRetrieverPlugin"))
+  FlutterScreenManagerPlugin.register(with: registry.registrar(forPlugin: "FlutterScreenManagerPlugin"))
   HotkeyManagerPlugin.register(with: registry.registrar(forPlugin: "HotkeyManagerPlugin"))
 }
